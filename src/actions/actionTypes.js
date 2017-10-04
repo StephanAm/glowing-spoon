@@ -1,2 +1,2 @@
 //SupplierActions
-const GET_SUPPLIERS = 'GET_SUPPLIERS'
+export const GET_SUPPLIERS_SUCCESS = 'GET_SUPPLIERS_SUCCESS'
