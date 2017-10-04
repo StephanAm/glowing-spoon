@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react';
-
+import {connect} from 'react-redux'
 class SupplierPage extends React.Component{
     render(){
         return(
@@ -9,5 +9,11 @@ class SupplierPage extends React.Component{
         );
     }
 }
-
-export default SupplierPage;
+function mapStateToProps(state,ownProps){
+    return {
+        suppliers:state.suppliers
+    };
+}
+export default connect
+    (mapStateToProps)//,mapDispatchToProps)
+    (SupplierPage);
